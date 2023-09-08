@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        .invoice-container {
+            width: 100%;
+            max-width: 595px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px solid #0078d4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 100px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #0078d4;
+            margin: 10px 0;
+        }
+
+        .help-desk {
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            color: #0078d4;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .help-desk p {
+            margin: 20px 0;
+        }
+
+        .help-desk strong {
+            font-weight: bold;
+            color: #0078d4;
+        }
+
+        .content {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content span {
+            font-weight: bold;
+            display: inline-block;
+            width: 100px;
+            margin-right: 5px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .table th, .table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+        }
+
+        .total {
+            text-align: right;
+            font-weight: bold;
+            font-size: 16px;
+            color: #0078d4;
+        }
+
+        .status {
+            font-size: 18px;
+            color: green;
+            margin-top: 20px;
+        }
+
+        .block {
+            height: 2px;
+            background-color: #0078d4;
+            margin: 20px 0;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .powered-by {
+            text-align: center;
+            font-size: 15px;
+            color: #aaa;
+            margin-top: 20px;
+        }
+
+        .powered-by img {
+            max-width: 100px;
+            margin-top: 10px;
+        }
+
+        .unsubscribe {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .unsubscribe p {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .unsubscribe-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: green; /* Change button color to green */
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .unsubscribe-button:hover {
+            background-color: #005ea2;
+        }
+
+        .bottom-logo {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="header">
+            <img src="https://1000logos.net/wp-content/uploads/2021/12/Norton-Logo-2019.png" alt="Company Logo">
+            <h1>Invoice</h1>
+        </div>
+        <div class="content">
+            <span>Invoice ID:</span> #9513465
+        </div>
+        <div class="content">
+            <span>Transaction ID:</span> TXN326545516544
+        </div>
+        <div class="content">
+            <span>Billing Date:</span> Sept 07, 2023
+        </div>
+        <div class="help-desk">
+            <p><strong>HeIp Desk Number 24*7 (US):</strong> <a href="tel:+19197097829">+1 (919) 709-7829</a></p>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>TotaI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BiIIing Subscription (I Year)</td>
+                    <td>$399.99</td>
+                    <td>I</td>
+                    <td>$399.99</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="total">TotaI:</td>
+                    <td>$399.99</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="status">
+            Payment Status: <span style="color: green;">SuccessfuI</span>
+        </div>
+        <div class="block"></div>
+        <div class="note">
+            Refunds accepted within 24 hours of purchase. Contact our HeIp Desk for any refund requests.
+        </div>
+        <div class="note">
+            Please read our <a href="#">Refund Policy</a> for more information.
+        </div>
+        <div class="unsubscribe">
+            <p>If you wish to unsubscribe from our services, click the button below:</p>
+            <a href=" " class="unsubscribe-button">Unsubscribe</a>
+        </div>
+    <div class="footer">
+        Please do not revert the message; this is a computer-generated invoice.
+    </div>
+    <div class="powered-by">
+        Powered by
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Logo_NortonLifeLock.svg/2560px-Logo_NortonLifeLock.svg.png" alt="Powered by Logo">
+    </div>
+</body>
+</html>
